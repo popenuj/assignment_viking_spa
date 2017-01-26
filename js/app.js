@@ -2,7 +2,7 @@ var VikingStore = angular.module("VikingStore", ['ui.router']);
 
 VikingStore.config(function($stateProvider, $urlRouterProvider) {
 
-  $urlRouterProvider.otherwise('/products');
+  $urlRouterProvider.otherwise('/products.index');
 
   $stateProvider
     .state('products', {
@@ -17,6 +17,9 @@ VikingStore.config(function($stateProvider, $urlRouterProvider) {
       resolve: {
         products: function(productService) {
           return productService.get();
+        },
+        categories: function(categoryService) {
+          return categoryService.get();
         }
       }
     })

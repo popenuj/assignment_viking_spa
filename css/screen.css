@@ -151,7 +151,9 @@ footer {
   position: relative;
   padding-top: 55px;
 }
-
+#banner-heading {
+  color: #fff;
+}
 .banner-title {
   font-family: 'Cinzel', serif;
   font-weight: 700;
