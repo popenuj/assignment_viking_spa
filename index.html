@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html ng-app="VikingStore">
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/screen.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:700|Muli:400,400i" rel="stylesheet">
+    <meta charset="utf-8"></meta>
+    <title>Viking Store SPA</title>
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!--lodash-->
+    <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+    <!--AngularJS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <!-- UI Router -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-rout er/0.4.2/angular-ui-router.min.js"></script>
+    <script src="/js/vendor/faker.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav>
+          <div class="home">Viking Store</div>
+          <div class="cart">
+            <img class="icon-cart" src="images/icon_empty_cart.png" alt="Your Cart">Your Cart
+          </div>
+        </nav>
+        <div class="banner-wrapper">
+          <div id="banner"></div>
+          <div class="banner-title">The Viking Store</div>
+        </div>
+        <h1>The Best Viking Gear on the Whole Web</h1>
+        <h2>Choose among our lineup of fine axes below</h2>
+      </header>
+
+      <ui-view></ui-view>
+
+      <main>
+        <div class="product">
+          <h3 class="title">The Silent Night</h3>
+          <div class="price">$200</div>
+          <div>
+            <img class="item-img" src="images/axe_silent_night_small.jpg" alt="The Silent Night">
+          </div>
+          <div class="options">
+            <button class="btn-cart"></button>
+          </div>
+        </div>
+
+        <div class="product">
+          <h3 class="title">The Kingmaker</h3>
+          <div class="price">$400</div>
+          <div>
+            <img class="item-img" src="images/axe_kingmaker_small.jpg" alt="The Kingmaker">
+          </div>
+          <div class="options">
+            <button class="btn-cart"></button>
+          </div>
+        </div>
+
+        <div class="product">
+          <h3 class="title">The Kingmaker</h3>
+          <div class="price">$400</div>
+          <div>
+            <img class="item-img" src="images/axe_kingmaker_small.jpg" alt="The Kingmaker">
+          </div>
+          <div class="options">
+            <button class="btn-cart"></button>
+          </div>
+        </div>
+
+        <div class="pagination">
+          &lt;&lt;Prev 1 2 3 ... 8 9 Next&gt;&gt;
+        </div>
+      </main>
+
+      <footer>
+        <h4>Contact</h4>
+        <div class="contact">
+          <img class="icon" src="images/icon_phone_white.png" alt="Phone Number">1 - 000 - 000 - 0000
+          <br />
+          <img class="icon" src="images/icon_email_white.png" alt="Email">contact@vikingstore.com
+        </div>
+      </footer>
+    </div><!-- wrapper -->
+  </body>
+
+  <script src="/js/app.js"></script>
+
+</html>

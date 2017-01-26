@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src = "/js/vendor/faker.js" type = "text/javascript"></script>
+  </head>
+  <body>
+
+    <script>
+      var categories = [
+        {
+          name: "axes",
+          id: 1,
+          products: []
+        },
+        {
+          name: "double axes",
+          id: 2,
+          products: []
+        },
+        {
+          name: "bearded axes",
+          id: 3,
+          products: []
+        },
+        {
+          name: "axis",
+          id: 4,
+          products: []
+        }
+      ]
+      var id = 1;
+      var products = [];
+      while (id < 10) {
+        var returnObj = {
+          productId: id,
+          categoryId: Math.floor(Math.random() * categories.length + 1),
+          price: faker.commerce.price(),
+          name: faker.commerce.productName(),
+          description: faker.lorem.sentence(),
+          imageSrc: "/images/axe_dainty_daisy_small.jpg"
+        }
+        products.push(returnObj);
+        categories[returnObj.categoryId - 1].products.push(returnObj.productId)
+        id++
+      }
+      console.log(categories);
+      console.log(products);
+    </script>
+  </body>
+</html>

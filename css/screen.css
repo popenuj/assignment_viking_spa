@@ -1,0 +1,249 @@
+/* TEMP */
+.btn-cart:after {
+  content: "Add to Cart";
+}
+
+* {
+  box-sizing: border-box;
+}
+/* TEMP */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* base */
+body {
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  line-height: 1.4em;
+  text-align: center;
+  color: #333;
+  background-color: #eee;
+}
+
+h1 {
+  color: #fff;
+  background-color: #333;
+  font-weight: bold;
+  font-size: 1.3em;
+  padding: 1.2em;
+}
+
+h2 {
+  font-size: 1.1em;
+  padding: .7em;
+  font-style: italic;
+  border-bottom: 1px solid #333;
+}
+
+h4 {
+  text-transform: uppercase;
+  margin-bottom: .5em;
+  color: #fe9800;
+}
+
+/* layout */
+.wrapper {
+  max-width: 1200px;
+  margin: 0px auto;
+  background-color: #fff;
+  box-shadow: 0px 0px 18px #333;
+  -moz-box-shadow: 0px 0px 18px #333;
+  -webkit-box-shadow: 0px 0px 18px #333;
+}
+
+nav {
+  position: fixed;
+  z-index: 10;
+  background-color: #fff;
+  margin-top: 0;
+  padding: 1em 3em;
+
+  width: 1200px;
+}
+
+.home {
+  float: left;
+}
+
+.cart {
+  float: right;
+}
+
+main {
+  padding: 1em 2em;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  margin: 0 auto;
+  padding: 3em 1em;
+  margin-top: -10px;
+  max-width: 1200px;
+}
+
+.pagination {
+  padding: 1em 0;
+}
+
+.contact {
+  display: inline-block;
+  text-align: left;
+}
+
+/* image and icon content */
+#banner {
+  opacity: .8;
+  height: 410px;
+  padding-top: 30px;
+  background-color: #333;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 1.0), rgba(255, 255, 255, 0.2)), url("../images/viking_ship_background_medium.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.banner-wrapper {
+  position: relative;
+  padding-top: 55px;
+}
+
+.banner-title {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 6em;
+  line-height: .8em;
+  color: #fe9800;
+  text-shadow: 2px 2px 13px #000;
+  position: absolute;
+  top: 2em;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item-img {
+  height: 180px;
+}
+
+.icon {
+  width: 22px;
+  height: 18px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.icon-cart {
+  width: 25px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* modules */
+.product {
+  display: inline-block;
+  margin: 0 .6em;
+  margin-bottom: 1.5em;
+  width: 276px;
+  border: 2px solid #333;
+  position: relative;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.title, .options {
+  background-color: #333;
+  color: #fff;
+  padding: .8em;
+}
+
+.price {
+  position: absolute;
+  background-color: #fff;
+  padding: .15em .3em .08em;
+  top: 50px;
+  right: -7px;
+  border: 1px solid #333;
+}
+
+.btn-cart {
+  background-color: #f6bf6b;
+  border: 1px solid #111;
+  padding: .4em 1em;
+}
+
+.btn-cart:active {
+  -moz-box-shadow: inset 0 0 10px #6f4400;
+  -webkit-box-shadow: inset 0 0 10px #6f4400;
+  box-shadow: inset 0 0 10px #6f4400;
+}
+
+/* media queries */
+@media only screen and (max-width: 480px) {
+  .banner-title {
+    display: none;
+  }
+
+  .item-img {
+    height: 130px;
+  }
+
+  .product {
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: 924px) {
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
