@@ -4,4 +4,4 @@ VikingStore.controller("ProductsIndexCtrl",
       $scope.products = products;
     }
   ]
-)
+);

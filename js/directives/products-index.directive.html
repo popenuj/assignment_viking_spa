@@ -2,7 +2,9 @@
   <h3 class="title">{{ product.name }}</h3>
   <div class="price">{{ product.price | currency }}</div>
   <div>
-    <img class="item-img" ng-src="{{ product.imageSrc }}" alt="{{ product.name }}">
+    <a ui-sref="products.show({ id: {{ product.productId }} })">
+      <img class="item-img" ng-src="{{ product.imageSrc }}" alt="{{ product.name }}">
+    </a>
   </div>
   <div class="options">
     <button class="btn-cart"></button>
