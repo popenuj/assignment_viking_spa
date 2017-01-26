@@ -12,11 +12,11 @@ VikingStore.config(function($stateProvider, $urlRouterProvider) {
     .state('products', {
       url: '/products',
       templateUrl: '/js/templates/products.html',
-      controller: 'ProductsIndexCtrl', // not yet created
+      controller: 'ProductsIndexCtrl',
       resolve: {
-        products: function(productService) {
+        products: ["productService", function(productService) {
           return productService.get();
-        }
+        }]
       }
     });
     // .state('product', {
