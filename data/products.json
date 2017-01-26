@@ -1,0 +1,74 @@
+[
+   {
+      "productId":1,
+      "categoryId":2,
+      "price":"670.00",
+      "name":"Sleek Soft Chicken",
+      "description":"Nisi consequuntur labore voluptatum qui.",
+      "imageSrc":"/images/axe_cunning_cutter_small.jpg"
+   },
+   {
+      "productId":2,
+      "categoryId":2,
+      "price":"940.00",
+      "name":"Licensed Concrete Fish",
+      "description":"Veniam rerum aut repellendus ab omnis qui architecto.",
+      "imageSrc":"/images/axe_silent_night_small.jpg"
+   },
+   {
+      "productId":3,
+      "categoryId":1,
+      "price":"668.00",
+      "name":"Intelligent Cotton Sausages",
+      "description":"Saepe odio sed aspernatur libero.",
+      "imageSrc":"/images/axe_silent_night_small.jpg"
+   },
+   {
+      "productId":4,
+      "categoryId":2,
+      "price":"386.00",
+      "name":"Practical Soft Bike",
+      "description":"Ut nulla aspernatur et quia quisquam eum.",
+      "imageSrc":"/images/axe_whispering_wind_small.jpg"
+   },
+   {
+      "productId":5,
+      "categoryId":3,
+      "price":"575.00",
+      "name":"Generic Soft Hat",
+      "description":"Suscipit quidem qui excepturi ducimus necessitatibus.",
+      "imageSrc":"/images/axe_cunning_cutter_small.jpg"
+   },
+   {
+      "productId":6,
+      "categoryId":3,
+      "price":"63.00",
+      "name":"Gorgeous Fresh Soap",
+      "description":"Eveniet facilis quaerat consequatur ea.",
+      "imageSrc":"/images/axe_cunning_cutter_small.jpg"
+   },
+   {
+      "productId":7,
+      "categoryId":1,
+      "price":"901.00",
+      "name":"Practical Granite Bacon",
+      "description":"Eligendi non molestias quia impedit sint sed itaque enim.",
+      "imageSrc":"/images/axe_dainty_daisy_small.jpg"
+   },
+   {
+      "productId":8,
+      "categoryId":2,
+      "price":"198.00",
+      "name":"Intelligent Metal Salad",
+      "description":"Quod dolor est vero.",
+      "imageSrc":"/images/axe_silent_night_small.jpg"
+   },
+   {
+      "productId":9,
+      "categoryId":4,
+      "price":"421.00",
+      "name":"Ergonomic Rubber Chicken",
+      "description":"Libero pariatur enim tempore quas ullam reiciendis fugit ullam autem.",
+      "imageSrc":"/images/axe_kingmaker_small.jpg"
+   }
+]

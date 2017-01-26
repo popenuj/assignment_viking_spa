@@ -33,6 +33,7 @@
       ]
       var id = 1;
       var products = [];
+      var images = ['axe_cunning_cutter_small.jpg', 'axe_kingmaker_small.jpg', 'axe_dainty_daisy_small.jpg', 'axe_silent_night_small.jpg', 'axe_double_trouble_small.jpg', 'axe_whispering_wind_small.jpg'];
       while (id < 10) {
         var returnObj = {
           productId: id,
@@ -40,14 +41,16 @@
           price: faker.commerce.price(),
           name: faker.commerce.productName(),
           description: faker.lorem.sentence(),
-          imageSrc: "/images/axe_dainty_daisy_small.jpg"
+          imageSrc: '/images/' + images[Math.floor(Math.random() * images.length)]
         }
         products.push(returnObj);
         categories[returnObj.categoryId - 1].products.push(returnObj.productId)
         id++
       }
-      console.log(categories);
-      console.log(products);
+      console.log(JSON.stringify(categories));
+      console.log(JSON.stringify(products));
     </script>
+
+
   </body>
 </html>
